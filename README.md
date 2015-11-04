@@ -7,7 +7,7 @@
 Gettext wrapper
 ---------------
 
- Translator and GettextEmulator are surikat's OOP adapation of [php-gettext](https://launchpad.net/php-gettext/) library.  
+ Translator and GettextEmulator are RedCat's OOP adapation of [php-gettext](https://launchpad.net/php-gettext/) library.  
  This library provides PHP functions to read MO files even when gettext is not compiled in or when appropriate locale is not present on the system.   
  The structure of locales is $projectHome/langs/$lang/LC\_MESSAGES/messages.mo, eg: www/langs/fr/LC\_MESSAGES/messages.mo. It support cache regeneration without restart apache by dint of use a copy of MO file named with timestamp suffix. To enable look for last message.$time.mo set dev to true. You'll have to create this file manualy or with other i18n tool. 
 ```php
@@ -15,7 +15,7 @@ Translator::getInstance()->dev = true;
             
 ```
    
- You can include "\_\_.php" to use procedural function based on *Wild\\Localize\\Translator* static current instance. 
+ You can include "\_\_.php" to use procedural function based on *RedCat\\Localize\\Translator* static current instance. 
 ```php
 echo \_\_($msgid);  
 echo n\_\_($singular,$plural,$number);  
