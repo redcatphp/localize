@@ -77,8 +77,8 @@ class Route{
 			else{
 				$docRoot = $_SERVER['DOCUMENT_ROOT'].'/';
 				//$docRoot = dirname($_SERVER['SCRIPT_FILENAME']).'/';
-				if(defined('REDCAT_PUBLIC'))
-					$cwd = REDCAT_PUBLIC;
+				if(defined('REDCAT_CWD'))
+					$cwd = REDCAT_CWD;
 				else
 					$cwd = getcwd();
 				if($docRoot!=$cwd&&strpos($cwd,$docRoot)===0)
