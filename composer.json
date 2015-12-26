@@ -4,12 +4,12 @@
 	"description": "Localize - Internationalization Toolbox with Gettext wrapper, Extractors, Unicode Common Locale Data Repository",
 	"keywords": ["Localize","l10n","i18n","Localization","Internationalization","Gettext","CLDR","Common Locale Data Repository"],
 	"license": ["LGPL-3.0+","CC0-1.0"],
-	"homepage": "https://github.com/redcatphp/Localize",
+	"homepage": "http://redcatphp.com/localize-i18n",
 	"authors": [
 		{
 			"name": "Jo Surikat",
 			"email": "jo@surikat.pro",
-			"homepage": "http://redcatphp.com/localize-i18n",
+			"homepage": "http://surikat.pro",
 			"role": "Developer"
 		}
 	],
