@@ -149,8 +149,6 @@ class Translator {
 		self::$bindStack[] = [$this->locale,$this->realLocale,$this->realDomain,$this->localesRoot];
 		if(!isset($this->locale))
 			return;
-		//var_dump($this->realLocale,$this->localesRoot);
-		$lang = $this->getLangCode();
 		putenv('LANG='.$this->locale);
 		putenv('LANGUAGE='.$this->locale);
 		putenv('LC_ALL='.$this->locale);
