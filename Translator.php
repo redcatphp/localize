@@ -19,7 +19,6 @@ class Translator {
 	private $originLocale;
 	private $realLocale;
 	private $localesRoot;
-	private $gettext;
 	private $altLocales;
 	private $realDomain;
 	
