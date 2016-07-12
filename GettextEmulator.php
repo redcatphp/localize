@@ -159,7 +159,7 @@ class GettextEmulator{
 	function dpgettext($domain, $context, $msgid){
 		return $this->encode($this->getReader($domain)->pgettext($context, $msgid));
 	}
-	function dcpgettext($domain, $context, $msgid,){
+	function dcpgettext($domain, $context, $msgid){
 		return $this->encode($this->getReader($domain)->pgettext($context, $msgid));
 	}
 	function npgettext($context, $singular, $plural){
