@@ -66,7 +66,7 @@ class AcceptLanguage{
 			$locale['language'] = '*';
 		return [$q, $locale];
 	}
-	private static function sort_tags(array $a, array $b){
+	static function sort_tags(array $a, array $b){
 		if($a[0] === $b[0])
 			return 0;
 		return ($a[0] < $b[0]) ? -1 : 1;
