@@ -147,10 +147,10 @@ class GettextEmulator{
 	function dngettext($domain, $singular, $plural, $number){
 		return $this->encode($this->getReader($domain)->ngettext($singular, $plural, $number));
 	}
-	function dcgettext($domain, $msgid, $category){
+	function dcgettext($domain, $msgid){
 		return $this->encode($this->getReader($domain)->translate($msgid));
 	}
-	function dcngettext($domain, $singular, $plural, $number, $category){
+	function dcngettext($domain, $singular, $plural, $number){
 		return $this->encode($this->getReader($domain)->ngettext($singular, $plural, $number));
 	}
 	function pgettext($context, $msgid){
@@ -159,7 +159,7 @@ class GettextEmulator{
 	function dpgettext($domain, $context, $msgid){
 		return $this->encode($this->getReader($domain)->pgettext($context, $msgid));
 	}
-	function dcpgettext($domain, $context, $msgid, $category){
+	function dcpgettext($domain, $context, $msgid,){
 		return $this->encode($this->getReader($domain)->pgettext($context, $msgid));
 	}
 	function npgettext($context, $singular, $plural){
@@ -168,7 +168,7 @@ class GettextEmulator{
 	function dnpgettext($domain, $context, $singular, $plural){
 		return $this->encode($this->getReader($domain)->npgettext($context, $singular, $plural));
 	}
-	function dcnpgettext($domain, $context, $singular, $plural, $category){
+	function dcnpgettext($domain, $context, $singular, $plural){
 		return $this->encode($this->getReader($domain)->npgettext($context, $singular, $plural));
 	}
 }
