@@ -6,7 +6,7 @@ class AcceptLanguage{
 		if(!$http_accept_language)
 			$http_accept_language = isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? $_SERVER['HTTP_ACCEPT_LANGUAGE'] : '';
 		$languages = [];
-		foreach (self::getLanguages($http_accept_language) as $q => $quality_group) {
+		foreach (self::getLanguages($http_accept_language) as $quality_group) {
 			foreach ($quality_group as $lang) {
 				$languages[] = $lang;
 			}
