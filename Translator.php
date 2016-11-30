@@ -41,7 +41,7 @@ class Translator {
 	static function getInstance(){
 		if(!isset(self::$instance)){
 			if(class_exists('RedCat\Strategy\Di'))
-				self::$instance = \RedCat\Strategy\Di::getInstance()->create(__CLASS__);
+				self::$instance = \RedCat\Strategy\Di::getInstance()->get(__CLASS__);
 			else
 				self::$instance = new self;
 		}
