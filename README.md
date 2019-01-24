@@ -1,4 +1,6 @@
- Localize
+**No longer actively maintained. I work now with NodeJS and I recommand you to take a look at [globalize](https://github.com/globalizejs/globalize)**
+
+Localize
 =========
 
  Localize is an internationalization toolbox with [Gettext](https://en.wikipedia.org/wiki/Gettext) wrapper, Extractors, Unicode [ CLDR. ](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository)  
